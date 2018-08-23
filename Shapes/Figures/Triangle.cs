@@ -12,6 +12,11 @@ namespace Shapes.Figures
         protected string color = "Blue";
         protected int x1, y1, x2, y2, x3, y3;
 
+        public Triangle()
+        {
+
+        }
+
         public Triangle(int x1, int y1, int x2, int y2, int x3, int y3)
         {
             double a = Segment(x1, y1, x2, y2);
@@ -76,7 +81,7 @@ namespace Shapes.Figures
 
         public override string ToString()
         {
-            return "Figure: " + Name + " " + Color + " " + Area() + " " + Perimeter();
+            return "Figure: " + Name + " " + "Color: " + Color + " " + "Area: " + Area() + " " + "Perimeter: "+ Perimeter();
         }
     }
 }

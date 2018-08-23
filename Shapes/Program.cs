@@ -17,6 +17,9 @@ namespace Shapes
 
             Drawer figure = new FigureDrawer();
             figure.Draw(rand);
+
+            Figure figure1 = new Circle(0,0,10);
+           // Console.WriteLine(figure1.ToString());
             
             Console.ReadKey();
         }

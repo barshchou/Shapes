@@ -8,11 +8,6 @@ namespace Shapes
 {
     abstract class Drawer
     {
-
         public abstract Figure Draw(int rand);
-
-        //General drawer
-
-        //public abstract Figure Draw()
     }
 }

@@ -55,7 +55,7 @@ namespace Shapes.Figures
 
         public override string ToString()
         {
-            return "Figure: " + Name + " " + Color + " " + Area() + " " + Perimeter();
+            return "Figure: " + Name + " " + "Color: " + Color + " " + "Area: " + Area() + " " + "Perimeter: " + Perimeter();
         }
     }
 }

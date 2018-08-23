@@ -12,6 +12,11 @@ namespace Shapes.Figures
         protected string color = "Green";
         protected int x1,y1,x2,y2,x3,y3,x4,y4;
 
+        public Rectangle()
+        {
+
+        }
+
         public Rectangle(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
         {
             double a = Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
@@ -58,7 +63,7 @@ namespace Shapes.Figures
 
         public override string ToString()
         {
-            return "Figure: " + Name + " " + Color + " " + Area() + " " + Perimeter();
+            return "Figure: " + Name + " " + "Color: " + Color + " " + "Area: " + Area() + " " + "Perimeter: " + Perimeter();
         }
     }
 }
