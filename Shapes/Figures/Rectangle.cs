@@ -33,7 +33,6 @@ namespace Shapes.Figures
                 this.y3 = y3;
                 this.x4 = x4;
                 this.y4 = y4;
-                Console.WriteLine(ToString());
             }
             else
             {

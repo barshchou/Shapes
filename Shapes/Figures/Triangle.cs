@@ -32,7 +32,6 @@ namespace Shapes.Figures
                 this.y2 = y2;
                 this.x3 = x3;
                 this.y3 = y3;
-                Console.WriteLine(ToString());
             }
             else
             {
@@ -50,7 +49,7 @@ namespace Shapes.Figures
 
         bool IsTriangle(double a, double b, double c)
         {
-            double eps = 1e-3; // точность вычислений до одной тысячной
+            double eps = 1e-3; 
             return (b + c - a > eps) && (a + c - b > eps) && (a + b - c > eps);
         }
 

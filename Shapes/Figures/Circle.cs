@@ -24,7 +24,6 @@ namespace Shapes.Figures
                 this.x1 = x1;
                 this.y1 = y1;
                 this.radius = radius;
-                Console.WriteLine(ToString());
             }
             else
             {
