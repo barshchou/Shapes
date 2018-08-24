@@ -8,12 +8,13 @@ namespace Shapes
 {
     public abstract class Figure
     {
-        protected string name;
-        protected string color;
+        
 
         public abstract double Perimeter();
         
         public abstract double Area();
+
+        public abstract bool IsCreatable();
 
     }
 }

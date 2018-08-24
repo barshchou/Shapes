@@ -19,17 +19,9 @@ namespace Shapes.Figures
 
         public Circle(int x1, int y1, int radius)
         {
-            if (radius >= 0)
-            {
-                this.x1 = x1;
-                this.y1 = y1;
-                this.radius = radius;
-            }
-            else
-            {
-                Console.WriteLine("Circle couldn't be created!");
-            }
-            
+            this.x1 = x1;
+            this.y1 = y1;
+            this.radius = radius;
         }
 
         public string Name
@@ -55,6 +47,11 @@ namespace Shapes.Figures
         public override string ToString()
         {
             return "Figure: " + Name + " " + "Color: " + Color + " " + "Area: " + Area() + " " + "Perimeter: " + Perimeter();
+        }
+
+        public override bool IsCreatable()
+        {
+            return radius > 0;
         }
     }
 }
