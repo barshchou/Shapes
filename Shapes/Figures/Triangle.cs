@@ -46,18 +46,18 @@ namespace Shapes.Figures
 
         public override double Area()
         {
-            double a = Convert.ToDouble(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
-            double b = Convert.ToDouble(Math.Sqrt(Math.Pow(x2 - x3, 2) + Math.Pow(y2 - y3, 2)));
-            double c = Convert.ToDouble(Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2)));
+            var a = Convert.ToDouble(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)));
+            var b = Convert.ToDouble(Math.Sqrt(Math.Pow(x2 - x3, 2) + Math.Pow(y2 - y3, 2)));
+            var c = Convert.ToDouble(Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2)));
             return 2 / a * Math.Sqrt(Perimeter() * (Perimeter() - a) * (Perimeter() - b) * (Perimeter() - c));
         }
 
         public override bool IsCreatable()
         {
-            double a = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
-            double b = Math.Sqrt(Math.Pow(x2 - x3, 2) + Math.Pow(y2 - y3, 2));
-            double c = Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2));
-            double eps = 1e-3;
+            var a = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
+            var b = Math.Sqrt(Math.Pow(x2 - x3, 2) + Math.Pow(y2 - y3, 2));
+            var c = Math.Sqrt(Math.Pow(x3 - x1, 2) + Math.Pow(y3 - y1, 2));
+            var eps = 1e-3;
 
             return (b + c - a > eps) && (a + c - b > eps) && (a + b - c > eps);
         }

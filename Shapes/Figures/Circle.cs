@@ -8,14 +8,9 @@ namespace Shapes.Figures
 {
     class Circle : Figure
     {
-        protected string name = "Circle";
-        protected string color = "Red";
+        private const string name = "Circle";
+        private const string color = "Red";
         protected int x1, y1, radius;
-
-        public Circle()
-        {
-
-        }
 
         public Circle(int x1, int y1, int radius)
         {
@@ -26,12 +21,12 @@ namespace Shapes.Figures
 
         public string Name
         {
-            get { return this.name; }
+            get { return name; }
         }
 
         public string Color
         {
-            get { return this.color; }
+            get { return color; }
         }
 
         public override double Perimeter()
